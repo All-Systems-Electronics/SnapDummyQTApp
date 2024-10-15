@@ -1,5 +1,8 @@
 # SnapDummyQTApp
 Example of creating a snap from a Qt project
+
+The build is tested on Ubuntu 20.04.3.
+The output is tested on Ubuntu 20.04.3 and Ubuntu 24.04.
 ## Prep
 ```
 # Install git and clone repo
