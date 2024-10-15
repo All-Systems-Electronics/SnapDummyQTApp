@@ -5,18 +5,12 @@ The build is tested on Ubuntu 20.04.3.
 The output is tested on Ubuntu 20.04.3 and Ubuntu 24.04.
 ## Prep
 ```
-# Install git and clone repo
-sudo apt install git -y
-git clone https://github.com/All-Systems-Electronics/SnapDummyQTApp
-
-# Install Qt
-sudo apt install qt5-default qt5-qmake build-essential
-
-# Install snap and snapcraft
-sudo apt install snap snapcraft -y
+# Install toolchains
+sudo apt install git snap snapcraft qt5-default qt5-qmake build-essential -y
 ```
 ## Build
 ```
+git clone https://github.com/All-Systems-Electronics/SnapDummyQTApp
 cd SnapDummyQTApp
 sudo chmod +x ./build.sh
 
