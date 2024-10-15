@@ -11,9 +11,11 @@ git clone https://github.com/All-Systems-Electronics/SnapDummyQTApp
 
 # Install snap and snapcraft
 sudo apt install snap snapcraft -y
+sudo snap install multipass
 ```
 ## Build
 ```
+cd SnapDummyQTApp
 sudo chmod +x ./build.sh
 sudo ./build.sh
 ```
