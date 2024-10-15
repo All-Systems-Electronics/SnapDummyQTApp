@@ -30,5 +30,5 @@ sudo snap install --devmode ./dummyapp-snap_0.1_amd64.snap
 # Run the app.
 # It will probably display the following error which can be ignored:
 # Qt: Session management error: Could not open network socket
-dummyapp-snap.dummyapp
+dummyapp
 ```
