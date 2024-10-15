@@ -6,7 +6,7 @@ if [ "$EUID" -ne 0 ]
 fi
 
 # Build dummy application
-rm -r ./build
+rm -rf ./build
 mkdir build
 cd build
 qmake ../DummyApp/DummyApp.pro
@@ -14,7 +14,7 @@ make
 cd ../
 
 # Copy binary into release folder
-rm -r ./release
+rm -rf ./release
 mkdir -p ./release/bin
 cp ./build/DummyApp ./release/bin/
 
