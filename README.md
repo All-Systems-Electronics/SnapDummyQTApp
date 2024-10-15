@@ -3,11 +3,11 @@ Example of creating a snap from a Qt project
 ## Prep
 ```
 # Install git and clone repo
-sudo apt install git
+sudo apt install git -y
 git clone https://github.com/All-Systems-Electronics/SnapDummyQTApp
 
 # Install snap and snapcraft
-sudo apt install snap snapcraft
+sudo apt install snap snapcraft -y
 ```
 ## Build
 ```
