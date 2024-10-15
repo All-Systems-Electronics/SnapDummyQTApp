@@ -11,17 +11,24 @@ git clone https://github.com/All-Systems-Electronics/SnapDummyQTApp
 
 # Install snap and snapcraft
 sudo apt install snap snapcraft -y
-sudo snap install multipass
 ```
 ## Build
 ```
 cd SnapDummyQTApp
 sudo chmod +x ./build.sh
-sudo ./build.sh
+
+# The build script will ask to install multipass if its not already installed.
+# Enter "y" to install it. It will install, but then the build will fail.
+# Run the build script again, and this time it should succeed.
+./build.sh
 ```
 ## Install and Run
 ```
-# After the package has built and installed successfully, the following will install and run the app.
+# Install the app
 sudo snap install --devmode ./dummyapp-snap_0.1_amd64.snap
+
+# Run the app.
+# It will probably display the following error which can be ignored:
+# Qt: Session management error: Could not open network socket
 dummyapp-snap.dummyapp
 ```
