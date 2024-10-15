@@ -9,6 +9,9 @@ The output is tested on Ubuntu 20.04.3 and Ubuntu 24.04.
 sudo apt install git -y
 git clone https://github.com/All-Systems-Electronics/SnapDummyQTApp
 
+# Install Qt
+sudo apt install qt5-default qt5-qmake build-essential
+
 # Install snap and snapcraft
 sudo apt install snap snapcraft -y
 ```
